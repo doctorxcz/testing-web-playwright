@@ -69,9 +69,9 @@ rootdir: localhost/testing-web-playwright
 plugins: base-url-2.1.0, playwright-0.8.0
 collected 3 items                                                                                                                                  
 
-tests/test_warhorse.py::test_warhorse_http_status[chromium] PASSED
-tests/test_warhorse.py::test_warhorse_homepage[chromium] PASSED
-tests/test_warhorse.py::test_warhorse_kcd2_presence[chromium] PASSED
+test_warhorse.py::test_warhorse_http_status[chromium] PASSED
+test_warhorse.py::test_warhorse_homepage[chromium] PASSED
+test_warhorse.py::test_warhorse_kcd2_presence[chromium] PASSED
 
 ============ 3 passed in 1.83s ====================
 ```
