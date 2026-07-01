@@ -43,16 +43,12 @@ Engeto akademy projekt který využívá nástroje playwright a pytest
 ```bash
 pytest
 ```
-2. Spuštění s detailním výstupem
 
-```bash
-pytest -vs
-```
-3. spuštění testů s vizuálním zobrazením prohlížeče
+2. spuštění testů s vizuálním zobrazením prohlížeče
 
 ```bash
 playwright install chromium
-pytest -vs --headed --slowmo=1000
+pytest --headed --slowmo=1000
 ```
 
 
@@ -61,19 +57,24 @@ pytest -vs --headed --slowmo=1000
 
 ```bash
 (.venv) user@localhost:~/D/E/T/0/testing-web-playwright
-➤ pytest -vs # zvolený příkaz
+➤ pytest # zvolený příkaz
 =============test session starts ==================
 platform -- localhost/testing-web-playwright/.venv/bin/python3.14
 cachedir: .pytest_cache
 rootdir: localhost/testing-web-playwright
 plugins: base-url-2.1.0, playwright-0.8.0
-collected 3 items                                                                                                                                  
+collected 6 items                                                                            
 
-test_warhorse.py::test_warhorse_http_status[chromium] PASSED
-test_warhorse.py::test_warhorse_homepage[chromium] PASSED
-test_warhorse.py::test_warhorse_kcd2_presence[chromium] PASSED
+test_warhorse.py::test_navigace_pres_menu_na_projekty[chromium] PASSED
+test_warhorse.py::test_klik_na_hru_otevre_externi_stranku[chromium] PASSED
+test_warhorse.py::test_neexistujici_stranka_vraci_404[chromium] PASSED
+test_warhorse.py::test_odkaz_social[chromium] PASSED
+test_warhorse.py::test_prepnuti_jazyka_na_en[chromium] PASSED
+test_warhorse.py::test_kontakt_obsahuje_mailto[chromium] PASSED
 
-============ 3 passed in 1.83s ====================
+============ 6 passed in 12.94s ====================
 ```
+
+
 
 
