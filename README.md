@@ -65,12 +65,12 @@ rootdir: localhost/testing-web-playwright
 plugins: base-url-2.1.0, playwright-0.8.0
 collected 6 items                                                                            
 
-test_warhorse.py::test_navigace_pres_menu_na_projekty[chromium] PASSED
-test_warhorse.py::test_klik_na_hru_otevre_externi_stranku[chromium] PASSED
-test_warhorse.py::test_neexistujici_stranka_vraci_404[chromium] PASSED
-test_warhorse.py::test_odkaz_social[chromium] PASSED
-test_warhorse.py::test_prepnuti_jazyka_na_en[chromium] PASSED
-test_warhorse.py::test_kontakt_obsahuje_mailto[chromium] PASSED
+test_warhorse.py::TestNavigace::test_menu_na_projekty[chromium] PASSED                        [ 16%]
+test_warhorse.py::TestNavigace::test_prepnuti_jazyka_na_en[chromium] PASSED                   [ 33%]
+test_warhorse.py::TestExterniOdkazy::test_hra_otevre_deepsilver[chromium] PASSED              [ 50%]
+test_warhorse.py::TestExterniOdkazy::test_youtube_odkaz[chromium] PASSED                      [ 66%]
+test_warhorse.py::TestStranky::test_neexistujici_stranka_vraci_404[chromium] PASSED           [ 83%]
+test_warhorse.py::TestStranky::test_kontakt_obsahuje_mailto[chromium] PASSED                  [100%]
 
 ============ 6 passed in 12.94s ====================
 ```
