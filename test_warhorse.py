@@ -27,11 +27,6 @@ class WarhorseHelper:
         expect(page).to_have_url(re.compile(cast_url), timeout=timeout)
 
     @staticmethod
-    def over_titulek_stranky(page, ocekavany_titulek, timeout=5000):
-        # Ověří, že titulek stránky obsahuje očekávaný text
-        expect(page).to_have_title(re.compile(ocekavany_titulek, re.IGNORECASE), timeout=timeout)
-
-    @staticmethod
     def over_ze_text_existuje(page, text_na_strance, timeout=5000):
         page.wait_for_selector(f"text={text_na_strance}", state="visible", timeout=timeout)
         assert page.get_by_text(text_na_strance, exact=False).first.is_visible()
